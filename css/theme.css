@@ -1,3 +1,7 @@
+body {
+  font-family: "effra",sans-serif;
+}
+
 h2 {
   font-family: "effra";
   font-size: 48px;
@@ -25,12 +29,21 @@ img.reviewer{
   width: 100%;
   padding: 20px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .header h1 {
-  font-family: "effra",sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 60px;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
   color: white;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 20px;
+  margin-top: 20px;
 }

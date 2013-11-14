@@ -1,3 +1,2 @@
-#!/bin/bash
-rsync -azv . youreadthis@frederick.dreamhost.com:~/
-
+#!/bin/sh
+ssh youreadthis@frederick.dreamhost.com 'cd youmustreadthis.com; git pull'

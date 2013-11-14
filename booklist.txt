@@ -1,0 +1,23 @@
+The Pragmatic Programmer: From Journeyman to Master
+by Andrew Hunt , David Thomas
+http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X/
+
+Pragmatic Thinking and Learning: Refactor Your Wetware
+by Andy Hunt 
+http://www.amazon.com/Pragmatic-Thinking-Learning-Refactor-Programmers/dp/1934356050/
+
+Software for Your Head: Core Protocols for Creating and Maintaining Shared Vision
+Jim McCarthy, Michele McCarthy
+http://www.amazon.com/Software-Your-Head-Protocols-Maintaining/dp/0201604566/
+
+Extreme Programming Explained: Embrace Change, 2nd Edition
+Kent Beck, Cynthia Andres
+http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/
+
+Mindset: The New Psychology of Success
+Carol Dweck
+http://www.amazon.com/Mindset-Psychology-Success-Carol-Dweck/dp/0345472322/
+
+The Starfish and the Spider: The Unstoppable Power of Leaderless Organizations
+Ori Brafman, Rod A. Beckstrom
+http://www.amazon.com/Starfish-Spider-Unstoppable-Leaderless-Organizations/dp/1591841836/

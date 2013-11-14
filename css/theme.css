@@ -11,8 +11,14 @@ h3 {
 }
 
 p {
-  font-family: "minion-pro";
+  font-family: "effra";
   font-size: 22px;
+  font-weight:300;
+}
+
+p.lead{
+  font-family:'effra';
+  font-weight:300;
 }
 
 img.reviewer{

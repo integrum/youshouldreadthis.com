@@ -8,6 +8,11 @@ h2 {
   margin-bottom: 5px;
 }
 
+h2 a, h2 a:hover, h2 a:active, h2 a:visited{
+  color:#333;
+  text-decoration:none;
+}
+
 h3 {
   font-family: "effra";
   font-size: 30px;

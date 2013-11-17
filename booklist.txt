@@ -28,3 +28,9 @@ The Starfish and the Spider: The Unstoppable Power of Leaderless Organizations
 Ori Brafman, Rod A. Beckstrom
 How do you build teams and organizations that are sustainable over time?  How can you be the most adaptable?  Forget everything you know about leadership and organization, be completely transformed.  A must for anyone wanting results.
 http://www.amazon.com/Starfish-Spider-Unstoppable-Leaderless-Organizations/dp/1591841836/
+
+
+1 page  = 450 words
+Avg reader per minute 250 words.
+
+(page * 450) / 250 = time to read book

@@ -1,167 +1,75 @@
-<!doctype html>
-<html>
-  <head>
-    <title>You Must Read This -- Books For Magnificence</title>
-    <meta name="description" content="You Must Read This. You are here because you want to be magnificent. These books will start you on the journey. Choose the one that speaks to you.">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="//use.typekit.net/vkl2uht.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+---
 
-  ga('create', 'UA-208128-10', 'youmustreadthis.com');
-  ga('send', 'pageview');
-
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div class="container header">
-      <h1 class="text-center">You Must Read This</h1>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-gray-50 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+  <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+    <div class="relative h-full max-w-7xl mx-auto">
+      <svg class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+      </svg>
+      <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+      </svg>
     </div>
-    <div class="container">
-      <div class='row'>
-        <div class='col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1'>
-          <p class='lead text-center'>You are here because you want to be magnificent.<br> These books will start you on the journey.<br> Choose the one that speaks to you.</p>
-        </div>
-      </div>
+  </div>
 
-			<hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Mindset-Psychology-Success-Carol-Dweck/dp/0345472322/"><img class="img-responsive img-thumbnail" src="img/mindset.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Mindset-Psychology-Success-Carol-Dweck/dp/0345472322/">Mindset: The New Psychology of Success</a></h2>
-              <h3 class="author">Carol Dweck</h3>
-              <p>Fixed vs Growth mindset.  Learn what is holding you and those around you back.  How can something so simple unlock something so powerful?  If you are struggling to get results or have team members that are frustrating you, Mindset will give you phenomenal insight.</p>
+  <div class="relative pt-6 pb-16 sm:pb-24">
+    <div class="mt-8 mx-auto max-w-7xl px-4 sm:mt-24">
+      <div class="text-center">
+        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+          <span class="block xl:inline">You must</span>
+          <span class="block text-indigo-600 xl:inline">read these books</span>
+        </h1>
+        <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+          You are here because you want to be magnificent. These books will start you on the journey. Choose the one that speaks to you.
+        </p>
+      </div>
+    </div>
+    <div class="mt-8 mx-auto max-w-4xl px4 sm:mt-24">
+      <div class="flex flex-col space-y-16">
+        {% for book in site.books %}
+          <div class="flex flex-col sm:flex-row items-center sm:items-start px-4">
+            <div class="w-full sm:w-1/3 text-center">
+              <a class="inline-block mx-auto" href="{{ book.amazon }}">
+                <img class="w-full sm:w-48 shadow-md" src="img/{{ book.image }}">
+              </a>
+            </div>
+            <div class="w-full mt-8 sm:mt-0 sm:w-2/3 sm:pl-8">
+              <h2 class="text-3xl font-bold">
+                {{ book.title }}
+              </h2>
+              <h3 class="font-semibold text-xl mt-4 text-gray-700">{{ book.author }}</h3>
+              <p class="text-gray-900 mt-2">{{ book.content | markdownify }}</p>
+              <p class="mt-4"><a class="text-indigo-500 hover:text-indigo-900 hover:underline" href="{{ book.amazon }}">View "{{ book.title }}" on Amazon</a></p>
             </div>
           </div>
-        </div>
+        {% endfor %}        
       </div>
-
-      <hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Daring-Greatly-Courage-Vulnerable-Transforms/dp/1592408419/"><img class="img-responsive img-thumbnail" src="img/daring-greatly.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Daring-Greatly-Courage-Vulnerable-Transforms/dp/1592408419/">Daring Greatly: Courage Vulnerable Transforms</a></h2>
-              <h3 class="author">Brene Brown</h3>
-              <p>How the courage to be vulnerable transforms the way we live, love, parent and lead.  Never has empathy and vulnerablity put on the table so clearly for all to understand.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Nonviolent-Communication-Language-Marshall-Rosenberg/dp/1892005034/"><img class="img-responsive img-thumbnail" src="img/nonviolent-communication.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Nonviolent-Communication-Language-Marshall-Rosenberg/dp/1892005034/">Nonviolent Communication: A Language of Life</a></h2>
-              <h3 class="author">Marshall B. Rosenberg</h3>
-              <p>Improve your relationships, deepen your sense of personal empowerment, communicate effecitvely.  Stop fostering conflict, pain and violence in your communication.  Discover language to get past that and create peace in your life.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-			<hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Pragmatic-Thinking-Learning-Refactor-Programmers/dp/1934356050/"><img class="img-responsive img-thumbnail" src="img/pragmatic-thinking-and-learning.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Pragmatic-Thinking-Learning-Refactor-Programmers/dp/1934356050/">Pragmatic Thinking and Learning: Refactor Your Wetware</a></h2>
-              <h3 class="author">Andy Hunt</h3>
-              <p>Your brain is a machine.  Knowing how it is wired and the architecture with in it is key to getting it's best performance.  I wont even bother arguing with someone about using physical boards vs digital boards or have a discussion about learning/fluency until they understand the principles in this book.  If you are looking for the "why" so many things in Agile work, this book will help explain them.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-			<hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Antifragile-Things-That-Gain-Disorder/dp/1400067820/"><img class="img-responsive img-thumbnail" src="img/blackswan.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Antifragile-Things-That-Gain-Disorder/dp/1400067820/">Antifragile: Things That Gain From Disorder</a></h2>
-              <h3 class="author">Nassim Nicholas Taleb</h3>
-              <p>Rewrite your reality.  Are you positioning yourself to be solid.  What if, the things you are doing to strengthen your world are actually making it more fragile?  The quest to go beyond robust is actually the path to fragility.  Instead embrace the disorder that brings destruction and become anti-fragile.  Expect to have your beliefs fundamentally challenged.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-			<hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Starfish-Spider-Unstoppable-Leaderless-Organizations/dp/1591841836/"><img class="img-responsive img-thumbnail" src="img/starfish-and-the-spider.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Starfish-Spider-Unstoppable-Leaderless-Organizations/dp/1591841836/">The Starfish and the Spider: The Unstoppable Power of Leaderless Organizations</a></h2>
-              <h3 class="author">Ori Brafman, Rod A. Beckstrom</h3>
-              <p>How do you build teams and organizations that are sustainable over time?  How can you be the most adaptable?  Forget everything you know about leadership and organization, be completely transformed.  A must for anyone wanting results.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-			<hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Software-Your-Head-Protocols-Maintaining/dp/0201604566/"><img class="img-responsive img-thumbnail" src="img/software-for-your-head.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Software-Your-Head-Protocols-Maintaining/dp/0201604566/">Software for Your Head: Core Protocols for Creating and Maintaining Shared Vision</a></h2>
-              <h3 class="author">Jim McCarthy, Michele McCarthy</h3>
-              <p>Simply brilliant.  This piece of work implemented will be the most transformative thing in your professional career.  The minute I find someone being stupid on purpose, I am reminded why this book is so important.  Writing software is a small part of your life as a developer.  The big part is working with people and on teams.  </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X/"><img class="img-responsive img-thumbnail" src="img/pragmatic-programmer.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X/">The Pragmatic Programmer: From Journeyman to Master</a></h2>
-              <h3 class="author">Andrew Hunt, David Thomas</h3>
-              <p>Andy and Dave were both original signatories of the agile manifesto.  The Pragmatic Programmer helps bring the agile mindset to life through metaphors, anecdotes and practical experience.  It represents the truths they have found in the real world of software development.  It will help prime the pump for the transformation you are about to undergo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr/>
-      <div class="row book">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/"><img class="img-responsive img-thumbnail" src="img/kent-beck-extreme-programming-explained.jpg"></a></div>
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-          <div class="row">
-            <div class="col-lg-10">
-              <h2><a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/">Extreme Programming Explained: Embrace Change, 2nd Edition</a></h2>
-              <h3 class="author">Kent Beck with Cynthia Andres</h3>
-              <p>This book is THE path to technical excellence.  Wonder why pairing is important?  Curious about collective code ownership?  Trying to grok how to do continuous integration/deployment?  It all starts here.  Master these practices and you will be successful.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<footer class="bg-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <div class="flex justify-center space-x-6 md:order-2">
 
     </div>
-    <div class="container footer">
-      &copy; 2013 Integrum Technologies, LLC
+    <div class="mt-8 md:mt-0 md:order-1">
+      <p class="text-center text-base text-gray-400">
+        &copy; 2013 Integrum Technologies
+      </p>
     </div>
-  </body>
-</html>
+  </div>
+</footer>

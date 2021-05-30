@@ -1,0 +1,17 @@
+title: You Must Read This
+description: You are here because you want to be magnificent. These books will start you on the journey. Choose the one that speaks to you.
+collections:
+  - books
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js
+  - netlify.toml
